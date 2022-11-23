@@ -47,6 +47,9 @@
       "limit": "10 KB"
     }
   ],
+  "dependencies": {
+    "commander": "^9.4.1"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
     "husky": "^8.0.2",
