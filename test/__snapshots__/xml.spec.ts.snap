@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`xml should parse xml 1`] = `
+XMLDocument {
+  "nodes": Array [
+    XMLComponent {
+      "attributes": Object {
+        "encoding": "UTF-8",
+        "version": "1.0",
+      },
+      "children": Array [
+        XMLElement {
+          "attributes": Object {},
+          "content": "",
+          "kind": "#text",
+        },
+      ],
+      "kind": "?xml",
+    },
+    XMLComponent {
+      "attributes": Object {
+        "errors": 0,
+        "failures": 0,
+        "name": "Jest Tests",
+        "tests": 0,
+        "time": "0",
+      },
+      "children": Array [
+        XMLComponent {
+          "attributes": Object {
+            "errors": 0,
+            "failures": 0,
+            "name": "jest",
+            "tests": 0,
+            "time": "0",
+            "timestamp": "2021-03-01T16:00:00",
+          },
+          "children": Array [
+            XMLComponent {
+              "attributes": Object {
+                "classname": "test1",
+                "name": "test1",
+                "time": "0.001",
+              },
+              "children": Array [],
+              "kind": "testcase",
+            },
+          ],
+          "kind": "testsuite",
+        },
+      ],
+      "kind": "testsuites",
+    },
+  ],
+}
+`;
+
+exports[`xml should print xml 1`] = `"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>"`;
