@@ -48,7 +48,8 @@
     }
   ],
   "dependencies": {
-    "commander": "^9.4.1"
+    "commander": "^9.4.1",
+    "fast-glob": "^3.2.12"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
