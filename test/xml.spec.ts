@@ -1,7 +1,7 @@
 import { XMLDocument } from '../src/lib/data/xmlDocument';
 import { XMLComponent, XMLElement } from '../src/lib/data/xmlNode';
 
-import { XML } from '../src/lib/xml';
+import { XML } from '../src/lib/xmlModule';
 
 describe('xml', () => {
   it('should parse xml', () => {

@@ -70,7 +70,7 @@ export class XML {
       const attributeName = key.replace(/^@_/, '') as string;
 
       let parsedValue;
-      if (['version', 'time'].includes(attributeName)) {
+      if (['version'].includes(attributeName)) {
         parsedValue = value;
       } else if (value.match(/^[0-9]+$/)) {
         parsedValue = parseInt(value, 10);

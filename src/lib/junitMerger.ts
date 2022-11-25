@@ -1,6 +1,6 @@
 import { XMLDocument } from './data/xmlDocument';
 import { XMLComponent, XMLElement } from './data/xmlNode';
-import { XML } from './xml';
+import { XML } from './xmlModule';
 
 export class JUnitMerger {
   junitDocument: XMLDocument;
@@ -52,7 +52,6 @@ export class JUnitMerger {
         }
       }
     }
-    
 
     return result;
   }

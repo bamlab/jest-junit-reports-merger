@@ -41,7 +41,7 @@ describe('JUnit Merger', () => {
     // Then
     const expectedJunitFile = xml`
         <?xml version="1.0" encoding="UTF-8"?>
-        <testsuites name="Jest Tests" tests="3" failures="0" errors="0">
+        <testsuites name="Jest Tests" tests="3" failures="0" errors="0" time="0.078">
             <testsuite name="core/configuration" tests="2" failures="0" errors="0" time="0.053">
                 <testsuite name="Configuration Service" tests="1" failures="0" errors="0" skipped="0" time="0.021" timestamp="2021-03-01T14:00:00">
                     <testcase name="Configuration Service - should dynamicly load module" classname="Configuration Service - should dynamicly load module" time="0.001"/>
