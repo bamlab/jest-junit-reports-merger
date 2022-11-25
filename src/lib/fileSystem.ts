@@ -11,4 +11,9 @@ export class FileSystem {
   readFileContent(path: string): string {
     return fs.readFileSync(path, 'utf8');
   }
+
+  writeFileContent(path: string, content: string) {
+    //fs.mkdirpSync(this.root);
+    return fs.writeFileSync(path, content, { encoding: 'utf8' });
+  }
 }
