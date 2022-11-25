@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['14.x']
+        node: ['18.x']
         os: [ubuntu-latest]
 
     steps:
@@ -23,12 +23,15 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: latest
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
 
       - name: Lint
         run: pnpm lint
 
       - name: Test
-        run: pnpm test --ci --coverage --maxWorkers=2
+        run: pnpm test -- --ci --coverage --maxWorkers=2
 
       - name: Build
         run: pnpm build
