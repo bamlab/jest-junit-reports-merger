@@ -4,6 +4,7 @@ specifiers:
   '@babel/core': ^7.0.0-0
   '@babel/plugin-transform-react-jsx': ^7.14.9
   '@size-limit/preset-small-lib': ^8.1.0
+  '@tsconfig/recommended': ^1.0.1
   '@types/fs-extra': ^9.0.13
   '@types/jest': ^29.2.3
   '@types/node': ^18.11.9
@@ -28,6 +29,7 @@ devDependencies:
   '@babel/core': 7.20.2
   '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.20.2
   '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
+  '@tsconfig/recommended': 1.0.1
   '@types/fs-extra': 9.0.13
   '@types/jest': 29.2.3
   '@types/node': 18.11.9
@@ -1814,6 +1816,10 @@ packages:
 
   /@tsconfig/node16/1.0.3:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+    dev: true
+
+  /@tsconfig/recommended/1.0.1:
+    resolution: {integrity: sha512-2xN+iGTbPBEzGSnVp/Hd64vKJCJWxsi9gfs88x4PPMyEjHJoA3o5BY9r5OLPHIZU2pAQxkSAsJFqn6itClP8mQ==}
     dev: true
 
   /@types/babel__core/7.1.20:

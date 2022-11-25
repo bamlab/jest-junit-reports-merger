@@ -1,43 +1,36 @@
 {
+  "name": "@bam.tech/jest-junit-reports-merger",
   "version": "1.0.0",
-  "license": "MIT",
+  "description": "Merge multiple JUnit reports into one",
   "homepage": "https://github.com/bamlab/jest-junit-reports-merger#readme",
   "bugs": {
     "url": "https://github.com/bamlab/jest-junit-reports-merger/issues"
-  },
-  "poeple": {
-    "name": "Tycho Tatitscheff",
-    "email": "https://twitter.com/tychota"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bamlab/jest-junit-reports-merger.git"
   },
-  "description": "Merge multiple JUnit reports into one",
+  "license": "MIT",
+  "author": "TychoTa",
   "main": "dist/index.js",
+  "module": "dist/jest-junit-reports-merger.esm.js",
   "typings": "dist/index.d.ts",
+  "bin": {
+    "jjrm": "bin/jjrm.js"
+  },
   "files": [
     "dist",
     "src",
     "bin"
   ],
-  "bin": {
-    "jjrm": "bin/jjrm.js"
-  },
-  "engines": {
-    "node": ">=10"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
-    "start": "dts watch",
+    "analyze": "size-limit --why",
     "build": "dts build",
-    "test": "dts test",
     "lint": "dts lint",
     "prepare": "dts build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "start": "dts watch",
+    "test": "dts test"
   },
   "husky": {
     "hooks": {
@@ -50,19 +43,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@bam.tech/jest-junit-reports-merger",
-  "author": "TychoTa",
-  "module": "dist/jest-junit-reports-merger.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/jest-junit-reports-merger.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/jest-junit-reports-merger.esm.js",
-      "limit": "10 KB"
-    }
-  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "commander": "^9.4.1",
     "fast-glob": "^3.2.12",
@@ -76,6 +59,7 @@
     "@types/fs-extra": "^9.0.13",
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
+    "@tsconfig/recommended": "^1.0.1",
     "dts-cli": "^1.6.0",
     "husky": "^8.0.2",
     "np": "^7.6.2",
@@ -83,11 +67,31 @@
     "tslib": "^2.4.1",
     "typescript": "^4.9.3"
   },
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
         "@babel/plugin-syntax-flow"
       ]
     }
-  }
+  },
+  "poeple": {
+    "name": "Tycho Tatitscheff",
+    "email": "https://twitter.com/tychota"
+  },
+  "size-limit": [
+    {
+      "path": "dist/jest-junit-reports-merger.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/jest-junit-reports-merger.esm.js",
+      "limit": "10 KB"
+    }
+  ]
 }
