@@ -1,9 +1,19 @@
 {
   "version": "1.0.0",
-  "publishConfig": {
-    "access": "public"
-  },
   "license": "MIT",
+  "homepage": "https://github.com/bamlab/jest-junit-reports-merger#readme",
+  "bugs": {
+    "url": "https://github.com/bamlab/jest-junit-reports-merger/issues"
+  },
+  "poeple": {
+    "name": "Tycho Tatitscheff",
+    "email": "https://twitter.com/tychota"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bamlab/jest-junit-reports-merger.git"
+  },
+  "description": "Merge multiple JUnit reports into one",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -16,6 +26,9 @@
   },
   "engines": {
     "node": ">=10"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "start": "dts watch",
