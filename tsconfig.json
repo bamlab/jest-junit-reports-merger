@@ -2,6 +2,20 @@
   "extends": "@tsconfig/recommended/tsconfig.json",
   "include": ["src", "types"],
   "compilerOptions": {
-    "module": "esnext"
+    "module": "ES2015",
+    "lib": ["esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noEmit": true
   }
 }
